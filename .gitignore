@@ -1,0 +1,8 @@
+.nextflow/
+.nextflow*
+work/
+results/
+apptainer/
+singularity/
+build_db*.log
+__pycache__/
