@@ -178,8 +178,8 @@ a sequence came from, it does not belong here.
 ```bash
 # tool element database, from the curated feature package in dataset/
 python3 bin/build_tool_db.py \
-    --manifest dataset/features_test/manifest_features_only.tsv \
-    --fasta    dataset/features_test/integrated_features_feature_orientation_69_records.fasta \
+    --manifest dataset/yeast_integrated_individual_features_only_v1/manifest_features_only.tsv \
+    --fasta    dataset/yeast_integrated_individual_features_only_v1/integrated_features_feature_orientation_69_records.fasta \
     --outdir   db/yeast/tools
 
 # then mark which of those elements are the host's own sequence.
@@ -211,7 +211,7 @@ python3 bin/build_strain_catalog.py \
     --sgd-dir dataset/sgd_strains \
     --exclude "<the 33 other-species assemblies of marker_alleles_report.txt>,scrapdb:BY,scrapdb:S288C,scrapdb:SGDref,scrapdb:CENPK1137D" \
     --aliases db/yeast/strains/aliases.tsv \
-    --path-map "dataset=/mnt/c/Users/gmillot/Documents/Git_projects/biosentinelle/dataset" \
+    --path-map "dataset=/mnt/c/Users/gmillot/Documents/Git_projects/biosentinelle_db/dataset" \
     --out db/yeast/strains/strains.tsv
 
 # strain panel: assemblies aligned, read runs called, then every strain at once
